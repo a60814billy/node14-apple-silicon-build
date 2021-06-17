@@ -16,6 +16,10 @@ cd nodejs-*
 ./configure --prefix=/ --dest-cpu=arm --download=all --with-intl=full-icu
 make -j8 binary V= DESTCPU=arm64 ARCH=arm64 DISTTYPE=release
 </pre>
+<h2>Using with <a href="https://github.com/nvm-sh/nvm" target="_blank">nvm</a>:</h2>
+<pre>
+NVM_NODEJS_ORG_MIRROR=https://nodejs.raccoon-tw.dev/release nvm install v14.17.0
+</pre>
 <table border="1">
     <thead>
     <tr>

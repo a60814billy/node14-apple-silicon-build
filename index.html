@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>Node.JS 14 Apple Silicon (arm64) Unofficial Build</title>
 </head>
 <body>
 <h1>Node.JS 14 Apple Silicon (arm64) Unofficial Build</h1>
-<p>This site provide unofficial apple silicon (arm64) build.</p>
-<p>These files the command shown below to build.</p>
-<h3>Build Command:</h3>
-<pre>
-curl -L -o "nodejs-$VERSION.zip" https://github.com/nodejs/node/archive/refs/tags/$VERSION
-unzip nodejs-*
-cd nodejs-*
-./configure --prefix=/ --dest-cpu=arm --download=all --with-intl=full-icu
-make -j8 binary V= DESTCPU=arm64 ARCH=arm64 DISTTYPE=release
-</pre>
+<p>This site provide unofficial apple silicon (arm64) prebuild binary. Please checkout these sites for other platform:
+<ul>
+    <li>Official Build: <a href="https://nodejs.org/dist/" target="_blank">https://nodejs.org/dist/</a></li>
+    <li>Official Nightly Build: <a href="https://nodejs.org/download/nightly/" target="_blank">https://nodejs.org/download/nightly/</a></li>
+    <li>Unofficial Build for special linux arch: <a href="https://unofficial-builds.nodejs.org/download/release" target="_blank">https://unofficial-builds.nodejs.org/download/release</a></li>
+</ul>
+</p>
 <h2>Using with <a href="https://github.com/nvm-sh/nvm" target="_blank">nvm</a>:</h2>
 <pre>
-NVM_NODEJS_ORG_MIRROR=https://nodejs.raccoon-tw.dev/release nvm install v14.17.0
+NVM_NODEJS_ORG_MIRROR=https://nodejs.raccoon-tw.dev/release nvm install v14.17.1
 </pre>
 <table border="1">
     <thead>
@@ -59,5 +56,17 @@ NVM_NODEJS_ORG_MIRROR=https://nodejs.raccoon-tw.dev/release nvm install v14.17.0
     </tr>
     </tbody>
 </table>
+
+<h2>Details</h2>
+<p>These binary are built with command showing below.</p>
+<h3>Build Command:</h3>
+<pre>
+curl -L -o "nodejs-$VERSION.zip" https://github.com/nodejs/node/archive/refs/tags/$VERSION
+unzip nodejs-*
+cd nodejs-*
+./configure --prefix=/ --dest-cpu=arm --download=all --with-intl=full-icu
+make -j8 binary V= DESTCPU=arm64 ARCH=arm64 DISTTYPE=release
+</pre>
+
 </body>
 </html>

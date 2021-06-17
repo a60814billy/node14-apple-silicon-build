@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Node.JS 14 Apple Silicon (arm64) Unofficial Build</title>
+</head>
+<body>
+<h1>Node.JS 14 Apple Silicon (arm64) Unofficial Build</h1>
+<p>This site provide unofficial apple silicon (arm64) build.</p>
+<p>These files the command shown below to build.</p>
+<h3>Build Command:</h3>
+<pre>
+curl -L -o "nodejs-$VERSION.zip" https://github.com/nodejs/node/archive/refs/tags/$VERSION
+unzip nodejs-*
+cd nodejs-*
+./configure --prefix=/ --dest-cpu=arm --download=all --with-intl=full-icu
+make -j8 binary V= DESTCPU=arm64 ARCH=arm64 DISTTYPE=release
+</pre>
+<table border="1">
+    <thead>
+    <tr>
+        <td>Version</td>
+        <td>Download</td>
+        <td>MD5 Checksum</td>
+        <td>SHA1 Checksum</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">v14.17.0</td>
+        <td><a href="release/v14.17.0/node-v14.17.0-darwin-arm64.tar.gz">node-v14.17.0-darwin-arm64.tar.gz</a></td>
+        <td>38611947fc15aff2f1ec68d07f704fca</td>
+        <td>e28a09efacd958b3aa8795341309c34f89eb6179</td>
+    </tr>
+    <tr>
+        <td><a href="release/v14.17.0/node-v14.17.0-darwin-arm64.tar.xz">node-v14.17.0-darwin-arm64.tar.xz</a></td>
+        <td>ab3ced1c93e20c69b65d4825a05e1c2a</td>
+        <td>8ee77b6a0eec0b6ef4c8fc2df2c9abf1d6741cfe</td>
+    </tr>
+    <tr>
+        <td rowspan="2">v14.17.1</td>
+        <td><a href="release/v14.17.1/node-v14.17.1-darwin-arm64.tar.gz">node-v14.17.1-darwin-arm64.tar.gz</a></td>
+        <td>7b96f7dbb484918cd938a75ccf5b031b</td>
+        <td>911e9efe4823b86694a264146dd6829de8c54669</td>
+    </tr>
+    <tr>
+        <td><a href="release/v14.17.1/node-v14.17.1-darwin-arm64.tar.xz">node-v14.17.1-darwin-arm64.tar.xz</a></td>
+        <td>42564474d4837784cc1fc7756778e53f</td>
+        <td>eebcc11d0bb38b2bef3d705dc5ba0eed3177ef1d</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

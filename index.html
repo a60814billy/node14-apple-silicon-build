@@ -118,9 +118,9 @@ NVM_NODEJS_ORG_MIRROR=https://nodejs.raccoon-tw.dev/release nvm install v14.17.3
 <p>These binary are built with command showing below.</p>
 <h3>Build Command:</h3>
 <pre>
-curl -L -o "nodejs-$VERSION.zip" https://github.com/nodejs/node/archive/refs/tags/$VERSION
-unzip nodejs-*
-cd nodejs-*
+curl -L -o "nodejs-$VERSION.zip" https://github.com/nodejs/node/archive/refs/tags/$VERSION.zip
+unzip "nodejs-$VERSION.zip"
+cd "node-${VERSION:1}"
 ./configure --prefix=/ --dest-cpu=arm --download=all --with-intl=full-icu
 make -j8 binary V= DESTCPU=arm64 ARCH=arm64 DISTTYPE=release
 </pre>

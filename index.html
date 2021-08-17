@@ -6,164 +6,276 @@
     <meta name="description" content="This site provide unofficial apple silicon (arm64) prebuild binary.">
     <meta name="og:title" content="Node.JS 14 macOS arm build">
     <meta name="og:description" content="This site provide unofficial apple silicon (arm64) prebuild binary.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="./tailwind.min.css" rel="stylesheet"/>
 </head>
 <body>
-<h1>Node.JS 14 Apple Silicon (arm64) Unofficial Build</h1>
-<p>This site provide unofficial apple silicon (arm64) prebuild binary. Please checkout these sites for other platform:
-<ul>
-    <li>Official Build: <a href="https://nodejs.org/dist/" target="_blank">https://nodejs.org/dist/</a></li>
-    <li>Official Nightly Build: <a href="https://nodejs.org/download/nightly/" target="_blank">https://nodejs.org/download/nightly/</a></li>
-    <li>Unofficial Build for special linux arch: <a href="https://unofficial-builds.nodejs.org/download/release" target="_blank">https://unofficial-builds.nodejs.org/download/release</a></li>
-</ul>
-</p>
-<h2>Using with <a href="https://github.com/nvm-sh/nvm" target="_blank">nvm</a>:</h2>
-<pre>
-NVM_NODEJS_ORG_MIRROR=https://nodejs.raccoon-tw.dev/release nvm install v14.17.3
+<div class="relative px-8 py-3 mx-auto" style="width: 1024px">
+    <header>
+        <h1 class="text-3xl font-bold leading-tight text-gray-900 pb-6">Node.JS 14 Apple Silicon (arm64) Unofficial
+            Build</h1>
+        <p class="text-xl">This site provide unofficial Apple Silicon (arm64) prebuild binary. Please checkout these
+            sites for other platform:
+        <ul class="list-inside list-disc text-lg">
+            <li>Official Build: <a class="text-indigo-600 hover:text-indigo-900" href="https://nodejs.org/dist/"
+                                   target="_blank">https://nodejs.org/dist/</a></li>
+            <li>Official Nightly Build: <a class="text-indigo-600 hover:text-indigo-900"
+                                           href="https://nodejs.org/download/nightly/" target="_blank">https://nodejs.org/download/nightly/</a>
+            </li>
+            <li>Unofficial Build for special linux arch: <a class="text-indigo-600 hover:text-indigo-900"
+                                                            href="https://unofficial-builds.nodejs.org/download/release"
+                                                            target="_blank">https://unofficial-builds.nodejs.org/download/release</a>
+            </li>
+        </ul>
+        </p>
+        <h2 class="text-2xl font-bold text-gray-900 py-6">Using with <a
+                class="text-indigo-600 hover:text-indigo-900 underline" href="https://github.com/nvm-sh/nvm"
+                target="_blank">nvm</a>:</h2>
+        <pre class="px-3 py-3 bg-gray-100 rounded">
+NVM_NODEJS_ORG_MIRROR=https://nodejs.raccoon-tw.dev/release nvm install v14.17.5
 </pre>
-<table border="1">
-    <thead>
-    <tr>
-        <td>Version</td>
-        <td>Download</td>
-        <td>File Size</td>
-        <td>MD5 Checksum</td>
-        <td>SHA1 Checksum</td>
-    </tr>
-    </thead>
-    <tbody>
-    <!-- v14.17.5 -->
-    <tr>
-        <td rowspan="3">v14.17.5</td>
-        <td><a href="release/v14.17.5/node-v14.17.5-darwin-arm64.tar.gz">node-v14.17.5-darwin-arm64.tar.gz</a></td>
-        <td>29.20 MB</td>
-        <td>4e7e1b3e16866441ee688476b590badc</td>
-        <td>d93b3fadf831450cc0ab253fcd54332693bf8491</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.5/node-v14.17.5-darwin-arm64.tar.xz">node-v14.17.5-darwin-arm64.tar.xz</a></td>
-        <td>18.09 MB</td>
-        <td>3d0a52e929a06f9a786d4b67924b318b</td>
-        <td>5f1d0fdabb1acfadfdac93e4d1053384229b7506</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.5/SHASUMS256.txt">SHASUMS256.txt</a></td>
-        <td>200 B</td>
-        <td>6f12735e49f459024a25abc628031998</td>
-        <td>df56e413c15c16d83b77595d16b3c6013fa60d96</td>
-    </tr>
-    <!-- v14.17.4 -->
-    <tr>
-        <td rowspan="3">v14.17.4</td>
-        <td><a href="release/v14.17.4/node-v14.17.4-darwin-arm64.tar.gz">node-v14.17.4-darwin-arm64.tar.gz</a></td>
-        <td>29.20 MB</td>
-        <td>725b4c8a0abc456ec63ed2a85af32e95</td>
-        <td>6f04db589e614947d68e11fe916a468fa013a452</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.4/node-v14.17.4-darwin-arm64.tar.xz">node-v14.17.4-darwin-arm64.tar.xz</a></td>
-        <td>18.09 MB</td>
-        <td>ae0dc64031424bfa3708be85f3515b27</td>
-        <td>b37a9c3e073e490378c555a1ec76d0f8e89a6570</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.4/SHASUMS256.txt">SHASUMS256.txt</a></td>
-        <td>200 B</td>
-        <td>61c2c85e9a00a39e1e106eeba1791a45</td>
-        <td>aa8d56b3e24035498b78e1e51e9d67de9bc37153</td>
-    </tr>
-    <!-- v14.17.3 -->
-    <tr>
-        <td rowspan="3">v14.17.3</td>
-        <td><a href="release/v14.17.3/node-v14.17.3-darwin-arm64.tar.gz">node-v14.17.3-darwin-arm64.tar.gz</a></td>
-        <td>29.18 MB</td>
-        <td>1d434c41ef3d2239795f958e015c6218</td>
-        <td>0dc69ebe23d33068ebfe4b7cc080f74fb2b201eb</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.3/node-v14.17.3-darwin-arm64.tar.xz">node-v14.17.3-darwin-arm64.tar.xz</a></td>
-        <td>18.08 MB</td>
-        <td>7c9739ed0f35f3021daeb1e81d65bfab</td>
-        <td>1c8e8060714a6e69dc90ac244714bed2a6ca9401</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.3/SHASUMS256.txt">SHASUMS256.txt</a></td>
-        <td>200 B</td>
-        <td>53f2aabcde8d53feb817d51f7d0eb4a1</td>
-        <td>fe45aca6bafff0e6322648cb3d1da903ee7b0cab</td>
-    </tr>
-    <!-- v14.17.2 -->
-    <tr>
-        <td rowspan="3">v14.17.2</td>
-        <td><a href="release/v14.17.2/node-v14.17.2-darwin-arm64.tar.gz">node-v14.17.2-darwin-arm64.tar.gz</a></td>
-        <td>29.18 MB</td>
-        <td>7bd49501c4221615d063243446f37dd3</td>
-        <td>48c8caadd40ef45f33afc1f441d4892d2580cdcd</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.2/node-v14.17.2-darwin-arm64.tar.xz">node-v14.17.2-darwin-arm64.tar.xz</a></td>
-        <td>18.09 MB</td>
-        <td>9a0c7a9e12c140a4d37e38e88e833098</td>
-        <td>1d89fc0772f7c76dc1664a7b3823f80298cf4c10</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.2/SHASUMS256.txt">SHASUMS256.txt</a></td>
-        <td>200 B</td>
-        <td>78752aad097817d0cc3d78269c950575</td>
-        <td>3cc68ec6779903b5603ba666a2fb32488b73216b</td>
-    </tr>
-    <!-- v14.17.1 -->
-    <tr>
-        <td rowspan="3">v14.17.1</td>
-        <td><a href="release/v14.17.1/node-v14.17.1-darwin-arm64.tar.gz">node-v14.17.1-darwin-arm64.tar.gz</a></td>
-        <td>29.18 MB</td>
-        <td>7b96f7dbb484918cd938a75ccf5b031b</td>
-        <td>911e9efe4823b86694a264146dd6829de8c54669</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.1/node-v14.17.1-darwin-arm64.tar.xz">node-v14.17.1-darwin-arm64.tar.xz</a></td>
-        <td>18.08 MB</td>
-        <td>42564474d4837784cc1fc7756778e53f</td>
-        <td>eebcc11d0bb38b2bef3d705dc5ba0eed3177ef1d</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.1/SHASUMS256.txt">SHASUMS256.txt</a></td>
-        <td>200 B</td>
-        <td>029fa6b40ac62fd38bc87a758751c98c</td>
-        <td>8eac4d463083d7e0846fcb2dd7ece2de888bb14f</td>
-    </tr>
-    <!-- v14.17.0 -->
-    <tr>
-        <td rowspan="3">v14.17.0</td>
-        <td><a href="release/v14.17.0/node-v14.17.0-darwin-arm64.tar.gz">node-v14.17.0-darwin-arm64.tar.gz</a></td>
-        <td>29.10 MB</td>
-        <td>38611947fc15aff2f1ec68d07f704fca</td>
-        <td>e28a09efacd958b3aa8795341309c34f89eb6179</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.0/node-v14.17.0-darwin-arm64.tar.xz">node-v14.17.0-darwin-arm64.tar.xz</a></td>
-        <td>18.02 MB</td>
-        <td>ab3ced1c93e20c69b65d4825a05e1c2a</td>
-        <td>8ee77b6a0eec0b6ef4c8fc2df2c9abf1d6741cfe</td>
-    </tr>
-    <tr>
-        <td><a href="release/v14.17.0/SHASUMS256.txt">SHASUMS256.txt</a></td>
-        <td>200 B</td>
-        <td>85f4bac925d79fa920f72e068b751dfa</td>
-        <td>a69b5b03d8f60024a3d236f0337d9648ea74baeb</td>
-    </tr>
-    </tbody>
-</table>
+    </header>
+    <article>
+        <div class="min-w-full overflow-x-auto">
+            <h2 class="text-2xl font-bold text-gray-900 py-6">All Versions</h2>
+            <table class="divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                <tr>
+                    <td class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Version
+                    </td>
+                    <td class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Download
+                    </td>
+                    <td class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">File
+                        Size
+                    </td>
+                    <td class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">MD5
+                        Checksum
+                    </td>
+                    <td class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">SHA1
+                        Checksum
+                    </td>
+                </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                <!-- v14.17.5 -->
+                <tr class="bg-white">
+                    <td rowspan="3" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">v14.17.5</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.5/node-v14.17.5-darwin-arm64.tar.gz">node-v14.17.5-darwin-arm64.tar.gz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">29.20 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">4e7e1b3e16866441ee688476b590badc</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        d93b3fadf831450cc0ab253fcd54332693bf8491
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.5/node-v14.17.5-darwin-arm64.tar.xz">node-v14.17.5-darwin-arm64.tar.xz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">18.09 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">3d0a52e929a06f9a786d4b67924b318b</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        5f1d0fdabb1acfadfdac93e4d1053384229b7506
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900" href="release/v14.17.5/SHASUMS256.txt">SHASUMS256.txt</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">200 B</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">6f12735e49f459024a25abc628031998</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        df56e413c15c16d83b77595d16b3c6013fa60d96
+                    </td>
+                </tr>
+                <!-- v14.17.4 -->
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500" rowspan="3">v14.17.4</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.4/node-v14.17.4-darwin-arm64.tar.gz">node-v14.17.4-darwin-arm64.tar.gz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">29.20 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">725b4c8a0abc456ec63ed2a85af32e95</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        6f04db589e614947d68e11fe916a468fa013a452
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.4/node-v14.17.4-darwin-arm64.tar.xz">node-v14.17.4-darwin-arm64.tar.xz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">18.09 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">ae0dc64031424bfa3708be85f3515b27</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        b37a9c3e073e490378c555a1ec76d0f8e89a6570
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900" href="release/v14.17.4/SHASUMS256.txt">SHASUMS256.txt</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">200 B</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">61c2c85e9a00a39e1e106eeba1791a45</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        aa8d56b3e24035498b78e1e51e9d67de9bc37153
+                    </td>
+                </tr>
+                <!-- v14.17.3 -->
+                <tr>
+                    <td rowspan="3" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">v14.17.3</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.3/node-v14.17.3-darwin-arm64.tar.gz">node-v14.17.3-darwin-arm64.tar.gz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">29.18 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1d434c41ef3d2239795f958e015c6218</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        0dc69ebe23d33068ebfe4b7cc080f74fb2b201eb
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.3/node-v14.17.3-darwin-arm64.tar.xz">node-v14.17.3-darwin-arm64.tar.xz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">18.08 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">7c9739ed0f35f3021daeb1e81d65bfab</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        1c8e8060714a6e69dc90ac244714bed2a6ca9401
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900" href="release/v14.17.3/SHASUMS256.txt">SHASUMS256.txt</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">200 B</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">53f2aabcde8d53feb817d51f7d0eb4a1</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        fe45aca6bafff0e6322648cb3d1da903ee7b0cab
+                    </td>
+                </tr>
+                <!-- v14.17.2 -->
+                <tr>
+                    <td rowspan="3" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">v14.17.2</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.2/node-v14.17.2-darwin-arm64.tar.gz">node-v14.17.2-darwin-arm64.tar.gz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">29.18 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">7bd49501c4221615d063243446f37dd3</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        48c8caadd40ef45f33afc1f441d4892d2580cdcd
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.2/node-v14.17.2-darwin-arm64.tar.xz">node-v14.17.2-darwin-arm64.tar.xz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">18.09 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">9a0c7a9e12c140a4d37e38e88e833098</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        1d89fc0772f7c76dc1664a7b3823f80298cf4c10
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900" href="release/v14.17.2/SHASUMS256.txt">SHASUMS256.txt</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">200 B</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">78752aad097817d0cc3d78269c950575</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        3cc68ec6779903b5603ba666a2fb32488b73216b
+                    </td>
+                </tr>
+                <!-- v14.17.1 -->
+                <tr>
+                    <td rowspan="3" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">v14.17.1</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.1/node-v14.17.1-darwin-arm64.tar.gz">node-v14.17.1-darwin-arm64.tar.gz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">29.18 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">7b96f7dbb484918cd938a75ccf5b031b</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        911e9efe4823b86694a264146dd6829de8c54669
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.1/node-v14.17.1-darwin-arm64.tar.xz">node-v14.17.1-darwin-arm64.tar.xz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">18.08 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">42564474d4837784cc1fc7756778e53f</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        eebcc11d0bb38b2bef3d705dc5ba0eed3177ef1d
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900" href="release/v14.17.1/SHASUMS256.txt">SHASUMS256.txt</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">200 B</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">029fa6b40ac62fd38bc87a758751c98c</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        8eac4d463083d7e0846fcb2dd7ece2de888bb14f
+                    </td>
+                </tr>
+                <!-- v14.17.0 -->
+                <tr>
+                    <td rowspan="3" class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500">v14.17.0</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.0/node-v14.17.0-darwin-arm64.tar.gz">node-v14.17.0-darwin-arm64.tar.gz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">29.10 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">38611947fc15aff2f1ec68d07f704fca</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        e28a09efacd958b3aa8795341309c34f89eb6179
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900"
+                            href="release/v14.17.0/node-v14.17.0-darwin-arm64.tar.xz">node-v14.17.0-darwin-arm64.tar.xz</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">18.02 MB</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">ab3ced1c93e20c69b65d4825a05e1c2a</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        8ee77b6a0eec0b6ef4c8fc2df2c9abf1d6741cfe
+                    </td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"><a
+                            class="text-blue-500 hover:text-blue-900" href="release/v14.17.0/SHASUMS256.txt">SHASUMS256.txt</a>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">200 B</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">85f4bac925d79fa920f72e068b751dfa</td>
+                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        a69b5b03d8f60024a3d236f0337d9648ea74baeb
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
 
-<h2>Details</h2>
-<p>These binary are built with command showing below.</p>
-<h3>Build Command:</h3>
-<pre>
+        <h2 class="text-2xl font-bold text-gray-900 py-3">Details</h2>
+        <p class="text-lg">These binary are built with command showing below.</p>
+        <h3 class="text-lg py-3">Build Command:</h3>
+        <pre class="px-3 py-3 bg-gray-100 rounded mb-3">
 curl -L -o "nodejs-$VERSION.zip" https://github.com/nodejs/node/archive/refs/tags/$VERSION.zip
 unzip "nodejs-$VERSION.zip"
 cd "node-${VERSION:1}"
 ./configure --prefix=/ --dest-cpu=arm --download=all --with-intl=full-icu
-make -j8 binary V= DESTCPU=arm64 ARCH=arm64 DISTTYPE=release
-</pre>
-
+make -j8 binary V= DESTCPU=arm64 ARCH=arm64 DISTTYPE=release</pre>
+    </article>
+</div>
 </body>
 </html>

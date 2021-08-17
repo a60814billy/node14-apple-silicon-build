@@ -1,4 +1,5 @@
 version	date	files	npm	v8	uv	zlib	openssl	modules	lts	security
+v14.17.5	2021-08-11	osx-arm64-tar	6.14.14	8.4.371.23	1.41.0	1.2.11	1.1.1k	83	Fermium	true
 v14.17.4	2021-07-29	osx-arm64-tar	6.14.14	8.4.371.23	1.41.0	1.2.11	1.1.1k	83	Fermium	true
 v14.17.3	2021-07-05	osx-arm64-tar	6.14.13	8.4.371.23	1.41.0	1.2.11	1.1.1k	83	Fermium	true
 v14.17.2	2021-07-01	osx-arm64-tar	6.14.13	8.4.371.23	1.41.0	1.2.11	1.1.1k	83	Fermium	true

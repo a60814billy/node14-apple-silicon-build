@@ -1,0 +1,2 @@
+f4d9a3b1f7174940cd84400ca17fdb3de63fbdd2e2b23e6ee8bdba18062dac1c  node-v14.19.1-darwin-arm64.tar.gz
+dee4d72fb08c13addf473a9c5058798adc0a8e72b55b1c0adc8306ba3054b90e  node-v14.19.1-darwin-arm64.tar.xz

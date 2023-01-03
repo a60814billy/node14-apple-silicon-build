@@ -1,0 +1,2 @@
+82c2826a7ae3950a8484e1d9fb40e39dd07af3367ae901f33e23a78005213b3e  node-v14.21.2-darwin-arm64.tar.gz
+fca4a0ad0120fe6fa47f237561a07fecf40a925b9e5e5d0f535e0e31dbd73ae0  node-v14.21.2-darwin-arm64.tar.xz
